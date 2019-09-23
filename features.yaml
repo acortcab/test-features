@@ -1917,7 +1917,7 @@ implementations:
 #
 
 value: boot-stream
-text: Spring Cloud Stream
+text: Spring Cloud Stream2222
 description: |-
   Spring Cloud Stream is a framework built upon Spring Boot for building message-driven microservices.
 requirementSets:

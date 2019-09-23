@@ -773,7 +773,7 @@ selfImplemented: true
 #
 
 value: app-performance
-text: Performance
+text: Performance333
 description: >-
   The performance module offers the possibilty of measure the performance of an application
   in a non-intrusive, configurable and extensible manner.

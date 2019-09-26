@@ -1,0 +1,34 @@
+name: quarkus
+type: scafolding
+description: brick to create a new project based on quarkus
+requesites:
+- name: Java
+  type: software
+  description: Java JDK must be installed
+  link: http://oracle.com
+- name: Maven
+  type: software
+  description: Maven Engine must be installed
+  link: http://maven.com
+templates:
+- name: quarkus
+  command: mvn io.quarkus:quarkus-maven-plugin:0.19.1:create -DprojectGroupId=$groupId -DprojectArtifactId=$artifactId -DclassName=$className -Dpath=$path
+  parameters:
+  - type: input
+    name: groupId
+    message: Group id for creating the artifact
+    default: com.example
+  - type: input
+    name: artifactId
+    message: Artifact id for creating the artifact
+    default: getting-started
+  - type: input
+    name: className
+    message: Class name for creating the initial className
+    default: org.acme.quickstart.GreetingResource
+  - type: input
+    name: path
+    message: Path for the initial endpoint
+    default: "/hello"
+- name: dockerfile
+  command: curl http://some.url --output dockerfile

@@ -12,7 +12,7 @@ requesites:
   link: http://maven.com
 templates:
 - name: quarkus
-  command: mvn io.quarkus:quarkus-maven-plugin:0.19.1:create -DprojectGroupId=$groupId -DprojectArtifactId=$artifactId -DclassName=$className -Dpath=$path
+  command: mvn io.quarkus:quarkus-maven-plugin:0.19.1:create -DprojectGroupId=$groupId -DprojectArtifactId=$artifactId -DclassName=$className -Dpath=$path &&
   parameters:
   - type: input
     name: groupId
@@ -30,5 +30,6 @@ templates:
     name: path
     message: Path for the initial endpoint
     default: "/hello"
-- name: dockerfile
-  command: curl http://some.url --output dockerfile
+- name: Image
+  command: maven:3.6.2-jdk-8
+  volume: c:/Users/acortcab/AngularDevelopment

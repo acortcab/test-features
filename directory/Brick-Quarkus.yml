@@ -30,6 +30,5 @@ templates:
     name: path
     message: Path for the initial endpoint
     default: "/hello"
-- name: Image
   image: maven:3.6.2-jdk-8
   volume: c:/Users/acortcab/AngularDevelopment

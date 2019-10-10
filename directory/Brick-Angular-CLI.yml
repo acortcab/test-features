@@ -18,5 +18,5 @@ templates:
     name: projectName
     message: Project name
     default: my-project-name-2 
-image: alexsuch/angular-cli:7.3.8-chromium
-volume: c:/Users/acortcab/AngularDevelopment
+  image: alexsuch/angular-cli:7.3.8-chromium    
+  volume: c:/Users/acortcab/AngularDevelopment

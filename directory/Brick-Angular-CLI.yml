@@ -12,7 +12,7 @@ requesites:
   link: https://www.npmjs.com/package/@angular/cli
 templates:
 - name: Brick-Angular-CLI
-  command: ng new $projectName
+  command: ng new $projectName --style=scss
   parameters:
   - type: input
     name: projectName

@@ -1,0 +1,26 @@
+name: angular-cli
+type: scafolding
+description: brick to create a new project based on tsf
+requesites:
+- name: NPM
+  type: software
+  description: NPM must be installed
+  link: https://www.npmjs.com/
+- name: Angular CLI
+  type: software
+  description: Angular CLI must be installed
+  link: https://www.npmjs.com/package/@angular/cli
+templates:
+- name: Brick-Angular-CLI
+  command: docker.exe run -it --rm -w /app -v $volume:/app alexsuch/angular-cli:7.3.8-chromium ng new $projectName
+  parameters:
+  - type: input
+    name: projectName
+    message: Project name
+    default: my-project-name-2
+  - type: input
+    name: volume
+    message: Path of your host
+    default: c:/Users/acortcab/AngularDevelopment    
+- name: dockerfile
+  command: curl http://some.url --output dockerfile

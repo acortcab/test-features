@@ -12,11 +12,13 @@ requesites:
   link: https://www.npmjs.com/package/@angular/cli
 templates:
 - name: Brick-Angular-CLI
-  command: ng new $projectName --style=scss &&
+  commands: 
+  - command: npm cache clean --force  
+  - command: ng new $projectName --routing=false --style=css --skipGit=true  
   parameters:
   - type: input
     name: projectName
     message: Project name
-    default: my-project-name-2
-  image: alexsuch/angular-cli:7.3.8-chromium
-  volume: c:/Users/acortcab/AngularDevelopment
+    default: my-project-name-2 
+- name: dockerfile
+  command: curl http://some.url --output dockerfile

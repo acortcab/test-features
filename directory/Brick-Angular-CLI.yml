@@ -11,10 +11,13 @@ prerequisites:
   description: Angular CLI must be installed
   link: https://www.npmjs.com/package/@angular/cli
 commands: 
+- cd .. 
+- rm ./package-lock.json
+- cd tmp
 - npm cache clean --force  
 - ng new $projectName --routing=false --style=css --skipGit=true  
 parameters:
 - type: input
   name: projectName
   message: Project name
-  default: my-project
+  default: my-project-name-2 
